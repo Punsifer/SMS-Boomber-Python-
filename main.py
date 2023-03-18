@@ -40,13 +40,13 @@ class Console():
 
 class Worker():              
     def random_proxy(self):
-        with open('config/proxies.txt', 'r') as f:
+        with open('proxies.txt', 'r') as f:
             proxies = [line.strip() for line in f]
         
         return random.choice(proxies)
 
     def config(self, args, args2=False):
-        with open('config/config.json', 'r') as conf:
+        with open('config.json', 'r') as conf:
             data = json.load(conf)
         
         if args2:
