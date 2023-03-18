@@ -29,7 +29,7 @@ class Console():
     
     def proxies_count(self):
         proxies_list = 0
-        with open('config/proxies.txt', 'r') as file:
+        with open('proxies.txt', 'r') as file:
             proxies = [line.strip() for line in file]
         
         for _ in proxies:
